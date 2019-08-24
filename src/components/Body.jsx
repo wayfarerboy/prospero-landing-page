@@ -1,26 +1,26 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
-  body: {
-    whiteSpace: 'preline',
+  wrapper: {
+    margin: theme.spacing(2, 2),
   },
+  body: { whiteSpace: 'preline' },
 }));
 
-const Body = ({ title, body }) => {
+const Body = ({ subtitle, title, body }) => {
   const classes = useStyles();
   return (
-    <React.Fragment>
-      <Typography variant="h5">{title}</Typography>
-      <Typography variant="body1" className={classes.body}>
-        {subtitle}
+    <div className={classes.wrapper}>
+      <Typography variant="h5" paragraph>{title}</Typography>
+      <Typography variant="body1" className={classes.body} style={{ whiteSpace: 'pre-line' }}>
+        {body}
       </Typography>
-    </React.Fragment>
+    </div>
   );
 };
 
-Header.displayName = 'Body';
+Body.displayName = 'Body';
 
 export default Body;

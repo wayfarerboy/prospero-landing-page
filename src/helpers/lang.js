@@ -21,6 +21,8 @@ const strings = {
       Enjoy and thank you for reading!`,
       download: '/5-ways.pdf',
     },
-    form: { button: 'Download' },
+    button: 'Download',
   },
 };
+
+export default strings;

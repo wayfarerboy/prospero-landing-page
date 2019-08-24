@@ -11,7 +11,7 @@ const theme = createMuiTheme({
   palette: {
     primary: { main: '#ffeb3b' },
     secondary: { main: '#01bcd5' },
-    // type: 'dark',
+    type: 'dark',
   },
   typography: {
     fontFamily: '"Catamaran", "Roboto", "Helvetica", "Arial", sans-serif',
@@ -26,7 +26,7 @@ const App = () => (
     </Helmet>
     <AppWrapper>
       <BrowserRouter>
-        <Route path="/" exact component={Home} />
+        <Route path="/form/:formId" exact component={Home} />
       </BrowserRouter>
     </AppWrapper>
   </ThemeProvider>

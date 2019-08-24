@@ -7,12 +7,23 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 import Logo from './Logo.jsx';
 
 const useStyles = makeStyles(theme => ({
+  '@global': {
+    body: {
+      background: theme.palette.background.default,
+    },
+  },
+
   wrapper: {
     background: theme.palette.background.default,
     height: '100%',
     width: '100%',
     color: theme.palette.text.primary,
   },
+
+  content: {
+    paddingTop: 64,
+  },
+
   button: {
     top: 6,
     position: 'relative',
@@ -34,14 +45,16 @@ const AppWrapper = ({ children }) => {
   const classes = useStyles();
   return (
     <div className={classes.wrapper}>
-      <AppBar position="static" color="default">
+      <AppBar color="default">
         <Toolbar>
           <ButtonBase className={classes.button} href="https://prospero.digital">
             <Logo className={classes.logo} />
           </ButtonBase>
         </Toolbar>
       </AppBar>
-      {children}
+      <div className={classes.content}>
+        {children}
+      </div>
     </div>
   );
 };
