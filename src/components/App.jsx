@@ -2,7 +2,6 @@ import React from 'react';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Helmet from 'react-helmet';
 
 import AppWrapper from './AppWrapper.jsx';
 import Home from './Home.jsx';
@@ -21,9 +20,6 @@ const theme = createMuiTheme({
 
 const App = () => (
   <ThemeProvider theme={theme}>
-    <Helmet>
-      <link async="true" href="https://fonts.googleapis.com/css?family=Catamaran:300,400,500&amp;display=swap" rel="stylesheet"/>
-    </Helmet>
     <AppWrapper>
       <BrowserRouter>
         <Route path="/form/:formId" exact component={Home} />

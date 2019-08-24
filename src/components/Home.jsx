@@ -1,6 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
+import Helmet from 'react-helmet';
 
 import Header from './Header.jsx';
 import Body from './Body.jsx';
@@ -18,6 +19,9 @@ const Home = ({ match: { params } }) => {
   const classes = useStyles();
   return (
     <React.Fragment>
+      <Helmet>
+        <title>{`Prospero - ${header.title}`}</title>
+      </Helmet>
       <Header {...header} />
       <Grid container justify="center" className={classes.content}>
         <Grid item xs={12} sm={8} md={4} lg={3} xl={3}>
