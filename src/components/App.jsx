@@ -22,7 +22,7 @@ const App = () => (
   <ThemeProvider theme={theme}>
     <AppWrapper>
       <BrowserRouter>
-        <Route path="/form/:formId" exact component={Home} />
+        <Route path="/form/:formId/:success?" component={Home} />
       </BrowserRouter>
     </AppWrapper>
   </ThemeProvider>
