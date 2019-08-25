@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/prospero-landing-page/static/css/main.543fa7be.chunk.css",
+    "main.js": "/prospero-landing-page/static/js/main.7bec7539.chunk.js",
+    "main.js.map": "/prospero-landing-page/static/js/main.7bec7539.chunk.js.map",
+    "runtime~main.js": "/prospero-landing-page/static/js/runtime~main.688c0c85.js",
+    "runtime~main.js.map": "/prospero-landing-page/static/js/runtime~main.688c0c85.js.map",
+    "static/js/2.5b00826a.chunk.js": "/prospero-landing-page/static/js/2.5b00826a.chunk.js",
+    "static/js/2.5b00826a.chunk.js.map": "/prospero-landing-page/static/js/2.5b00826a.chunk.js.map",
+    "index.html": "/prospero-landing-page/index.html",
+    "precache-manifest.4d5fe9e26259f7a4beb653b1b4fc58a6.js": "/prospero-landing-page/precache-manifest.4d5fe9e26259f7a4beb653b1b4fc58a6.js",
+    "service-worker.js": "/prospero-landing-page/service-worker.js",
+    "static/css/main.543fa7be.chunk.css.map": "/prospero-landing-page/static/css/main.543fa7be.chunk.css.map"
+  }
+}
